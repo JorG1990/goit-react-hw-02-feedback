@@ -1,8 +1,8 @@
 
 import PropTypes from "prop-types";
-import { Button } from "./FeedBackOptions.styled";
+import { Button } from "./FeedbackOptions.styled";
 
-const FeedBackOptions =({options, onLeaveFeedeback}) => {
+const FeedbackOptions =({options, onLeaveFeedeback}) => {
   const feedbackOptions = [
     { value: 'good', label: 'Good' },
     { value: 'neutral', label: 'Neutral' },
@@ -20,7 +20,7 @@ const FeedBackOptions =({options, onLeaveFeedeback}) => {
   );
 };
 
-FeedBackOptions.propTypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,
@@ -28,4 +28,6 @@ FeedBackOptions.propTypes = {
     })
   ),
   onLeaveFeedeback: PropTypes.func.isRequired,
-}
+};
+
+export default FeedbackOptions;

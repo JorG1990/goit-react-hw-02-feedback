@@ -1,6 +1,7 @@
+
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Item } from "react-dom";
+import { Container, Item } from "./Statistics.styled";
 
 
 function Statistics ({ feedback }) {
